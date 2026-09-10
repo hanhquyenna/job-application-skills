@@ -1,0 +1,4 @@
+interface:
+  display_name: "Cover Letter Builder"
+  short_description: "Build truthful, tailored cover letters"
+  default_prompt: "Use $cover-letter-builder to build a tailored cover letter from this active JD and approved experience."

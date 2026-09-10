@@ -1,0 +1,8 @@
+.job-apply/
+.DS_Store
+.vscode/
+.idea/
+*.env
+*.docx
+*.pdf
+*.csv

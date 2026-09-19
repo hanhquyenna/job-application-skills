@@ -25,6 +25,12 @@ Open and verify this view before falling back to workspace search. Do not silent
 
 ## Workflow
 
+### Same-machine local-agent startup
+
+When running as a local agent on the user's machine, start by using the existing authorized Chrome/browser session. Open the tracker URL below (or locate the visible Notion tab) immediately; do not wait for a Notion API key and do not search shell history, dotfiles, browser storage, or process environments for credentials. If the browser session is not authorized, report that the user must sign in or configure the Notion connector securely.
+
+This skill is browser-session based. A local agent must not assume that access to the filesystem grants access to Notion, and must never print, copy, or commit a Notion token.
+
 1. Locate the user's Notion job-tracking page or database in the already-authorized browser session. Prefer the visible database table over guessing URLs.
 2. Read the rows and collect the values from the `Link` property when they are LinkedIn job URLs. Preserve each job title, company, status, and URL.
 3. Open the collected LinkedIn URLs in Chrome. Keep the original Notion page available so each LinkedIn page can be mapped back to its row.

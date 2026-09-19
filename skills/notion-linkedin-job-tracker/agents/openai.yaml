@@ -1,0 +1,7 @@
+interface:
+  display_name: "Notion LinkedIn Job Tracker"
+  short_description: "Inspect Notion job links in Chrome"
+  default_prompt: "Use $notion-linkedin-job-tracker to read my Notion job pipeline and inspect its LinkedIn links in Chrome."
+
+policy:
+  allow_implicit_invocation: true

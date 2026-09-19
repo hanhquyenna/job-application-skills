@@ -7,6 +7,14 @@ description: Source and verify internship and early-career jobs through LinkedIn
 
 Use this skill when the user asks to find jobs on LinkedIn, inspect saved LinkedIn job links, verify whether listings are still active, or transfer job details into a tracker.
 
+## Default Notion tracker
+
+Use the user's active Job Tracking Pipeline view as the tracker for sourcing and reconciliation:
+
+<https://app.notion.com/p/372d3b3acf8181498a26d68bd2b32a23?v=372d3b3acf81818f94b0000c84d46d87>
+
+Load this view before searching, verifying, or proposing tracker updates. If it cannot be opened, report that exact failure and do not silently switch to another database.
+
 ## Run intent gate
 
 - On every invocation, load the complete experience bank and discover the connected Notion job tracker before opening listings or writing data. Use the experience-bank preferences as the default sourcing brief.

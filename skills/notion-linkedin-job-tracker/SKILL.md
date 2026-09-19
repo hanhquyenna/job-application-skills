@@ -7,6 +7,14 @@ description: Read LinkedIn job URLs from a Notion tracking database and inspect 
 
 Use this skill when the user wants to inspect or monitor job postings saved in a Notion job-tracking database through LinkedIn in Chrome.
 
+## Default tracker
+
+Use the user's active Job Tracking Pipeline view as the first tracker source:
+
+<https://app.notion.com/p/372d3b3acf8181498a26d68bd2b32a23?v=372d3b3acf81818f94b0000c84d46d87>
+
+Open and verify this view before falling back to workspace search. Do not silently substitute another database or archived page if this view is inaccessible; report the access problem and the URL used.
+
 ## Run intent gate
 
 - Before opening rows or LinkedIn pages, locate the exact Notion tracker and show its URL.

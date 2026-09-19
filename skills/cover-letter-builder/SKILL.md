@@ -58,6 +58,8 @@ Before writing, extract:
 
 For the company hook, use one concrete, traceable fact tied to the role: a named product, market move, programme, customer problem, or initiative. Prefer official employer pages, the official careers portal, filings, and the JD itself. Record source URL, access date, and confidence. Do not use generic praise or convert an international footprint into a promise of visa sponsorship. If a recruiter or hiring manager is explicitly identified, use the name; otherwise use a register-appropriate generic greeting.
 
+When introducing a previous employer, add one verified descriptor only when it clarifies the scale or setting of the evidence that follows. A personal sentence such as “I was fortunate to work there” is useful only when the candidate supplied it and it leads directly into what they did. Do not stack prestige labels or use “leading,” “largest,” or “conglomerate” without a dated source.
+
 ## Draft structure
 
 Default to a one-page narrative letter:
@@ -80,6 +82,35 @@ Load the user's stored writing-style profile when available. A user-provided dra
 - run a read-aloud pass and remove sentences that sound templated;
 - check repeated sentence openers, passive claims, vague ranges, and unsupported emotional language;
 - do not add typos or artificial awkwardness to appear human.
+
+If `humanizer` is used, pass a context packet with mode, audience, purpose, tone, length, protected facts/terms/citations/links, prohibited additions, and output mode. Prefer two or three approved writing samples; if fewer are available, label voice confidence and do not invent quirks. Require its change summary, verification checklist, and optional quality score before formatting.
+
+## Expert-feedback calibration
+
+Translate review feedback into a gated revision before formatting:
+
+- If the middle is compressed, give each paragraph one purpose and separate stakes, action, and consequence.
+- If examples feel list-like, order them from the primary decision story to supporting evidence and add a short, factual role bridge after each example.
+- If wording is awkward or wordy, shorten the smallest supported span and remove repetition before changing vocabulary.
+- If the opening is vague, lead with the verified company event, then name the role and the candidate's one-line value proposition.
+- If the closing is weak, state one specific contribution to the named team and make a modest ask; do not repeat the CV or the opening.
+- If feedback requests outcomes or role-specific metrics absent from the approved evidence, mark the gap instead of inventing one.
+
+Record the feedback finding, change, and preserved evidence in the humanizer rule ledger. A review score can guide revision but cannot override the active-JD, source-of-truth, or no-invention barriers.
+
+## Story and persuasion gate
+
+Before formatting a Kien letter, read `../kien-cover-letter/references/kien-output-profile.md` and `../kien-cover-letter/references/cover-letter-scoring.md`. Formatting is downstream of the full story, evidence, and persuasion review; a short main skill file does not replace those references.
+
+Before formatting, check the argument in this order: `employer-specific trigger → candidate reaction → tension or uncertainty → choice → action/method → consequence or honest unresolved result → working rule → day-one contribution`.
+
+- Lead with one primary story that demonstrates judgement. Use one shorter supporting proof point only when it reinforces the same reason to hire the candidate.
+- Do not let the body become `Company A → task → tool → metric; Company B → task → tool → metric`. That is a second CV even when every fact is correct.
+- Judge persuasion separately from factual and ATS checks. Record hook specificity, story progression, evidence credibility, role relevance, and natural voice; a letter can be factually valid and still fail because the reader cannot see why the story matters.
+- Apply [references/cover-letter-scoring.md](../kien-cover-letter/references/cover-letter-scoring.md) before formatting. Treat active-JD status, factual traceability, story integrity, and a supported employer hook as barriers. Return `HOLD` for any critical barrier failure even when the numeric score is high; do not let ATS keyword coverage compensate for a weak or generic story.
+- Treat a personal reaction or choice as evidence only when the candidate supplied it. Never add sentiment, struggle, a corrected result, or a company event to create a stronger arc.
+- Keep the evidence map and T-chart internal. The final letter should read as prose, not as a qualifications table, unless the application explicitly asks for a professional brief.
+- Treat anonymous Reddit success claims as pattern observations, not outcome evidence. Prefer the recurring lessons: specific work over prestige, motivation over CV repetition, and concrete finance mechanics over “passion” language.
 
 Reject common filler such as “I am writing to express my interest,” “I am excited to apply,” “perfect fit,” “passionate,” “results-driven,” “team player,” “innovative culture,” “proven track record,” “in today’s landscape,” and similar generic claims. Avoid AI-fingerprint words such as “delve,” “leverage,” “robust,” “seamless,” “unlock,” “foster,” and “cutting-edge” unless they appear in a user-supplied quotation that must be preserved.
 
@@ -106,3 +137,15 @@ Before delivery, report:
 - whether the user must review a factual, eligibility, or wording issue.
 
 A “ready” letter has no unsupported claims, no unresolved source conflicts, no stale JD, no invented company facts, and passes document rendering QA. If the letter is not ready, return the draft only with the blocker clearly marked.
+
+## Pipeline stage protocol
+
+Run this skill as a gated letter-production stage:
+
+1. **Readiness:** verify active JD, approved humanized text, scoring barriers, evidence map, recipient, format, and output profile.
+2. **Build:** create DOCX/PDF/LaTeX from the approved text verbatim using the requested format.
+3. **Diff:** extract the output and compare it with the approved plain text; no silent polishing or substitutions.
+4. **Render:** inspect every page for clipping, overflow, links, missing glyphs, font substitution, blank pages, and unwanted breaks.
+5. **Release:** write the output manifest with JD hash, evidence IDs, score, text hash, output hash, and render result.
+
+**Stage QC:** `PASS` requires all critical persuasion barriers, exact text agreement, and clean rendering. `REVISE` names a formatting defect. `HOLD` returns to `kien-cover-letter` or `humanizer` when the content itself is not ready.

@@ -74,6 +74,17 @@ A cover letter can trigger those signals even when the facts are genuine because
 
 The practical response is not to add random errors or try to evade a detector. It is to make the writing independently verifiable as Kien's: use his unusual moments, his own causal wording, his uncertainty where it is real, and his actual explanation of why a number made him stop. Keep drafts, notes, and the source CV. The detector score should be treated as a style warning, not as a truth test.
 
+## Reddit reviewer evidence: tone, hook, and story flow
+
+Public Reddit discussions are useful for reader reaction and failure patterns, but anonymous success claims are not controlled hiring evidence. Use them as qualitative signals only.
+
+- Reviewers in `r/FinancialCareers` rejected generic phrases such as “passion for finance” and “passion for intricate processes” when the writer did not name a real desk activity. They asked for a specific product, transaction, market problem, or area of finance instead. ([IB internship critique](https://www.reddit.com/r/FinancialCareers/comments/puub55/criticism_on_my_ib_internship_cover_letter/); [detailed finance critique](https://www.reddit.com/r/FinancialCareers/comments/1hc2s4d/could_you_help_review_my_investment_banking/))
+- `r/jobs` reviewers described the useful part of a letter as the context a CV cannot show: why the role is interesting, how the candidate works, and a concrete story of applying a skill. ([discussion](https://www.reddit.com/r/jobs/comments/67x77w/how_the_heck_do_you_write_a_good_cover_letter/))
+- An `r/MBA` guide recommends researching the company's product, problem, and distinctive work, then linking one or two reasons to a real qualification. Its comments prefer details about what the group actually does over prestige or mission language. ([guide](https://www.reddit.com/r/MBA/comments/te0ro8/my_guide_to_writing_a_killer_cover_letter/))
+- A popular `r/jobs` qualification-to-evidence table is a useful internal screening aid, but comments note that it is not a substitute for narrative. The original author later acknowledged that thoughtful experience and context matter more than the template itself. ([template thread](https://www.reddit.com/r/jobs/comments/37rgr1/heres_the_best_cover_letter_ive_ever_seen/))
+
+Apply these observations with the following story rule: `specific employer work → candidate reaction → tension → choice → method → consequence or honest unresolved result → working rule → day-one contribution`. Keep one primary story and one supporting proof. If the letter becomes two company summaries or a qualifications table, rebuild it around the primary decision. Do not add fake mistakes, slang, typos, or invented emotion to lower a detector score.
+
 ## ING event hook found for this application
 
 The earlier ING drafts used only the job-description hook. Official ING material provides stronger, company-specific context:
@@ -130,7 +141,7 @@ The examples also show what to stop doing. The polished templates repeatedly use
 
 The three repositories solve different problems:
 
-- **[blader/humanizer](https://github.com/blader/humanizer)** is an agent skill. Its useful rule is to treat the draft as material, mark structural tells first, preserve every supported fact, match a supplied writing sample, then run one final audit. The local `~/.codex/skills/humanizer/SKILL.md` is an exact byte-for-byte copy of the repository's current `SKILL.md`, so installing it again would add nothing. ([Repository README](https://github.com/blader/humanizer); [skill source](https://raw.githubusercontent.com/blader/humanizer/main/SKILL.md))
+- **[blader/humanizer](https://github.com/blader/humanizer)** is an agent skill. Its useful rule is to treat the draft as material, mark structural tells first, preserve every supported fact, match a supplied writing sample, then run one final audit. The local `/Users/ad/.codex/skills/humanizer/SKILL.md` is an exact byte-for-byte copy of the repository's current `SKILL.md`, so installing it again would add nothing. ([Repository README](https://github.com/blader/humanizer); [skill source](https://raw.githubusercontent.com/blader/humanizer/main/SKILL.md))
 - **[Humanizr/Humanizer](https://github.com/Humanizr/Humanizer)** is a .NET library for deterministic string, date, duration, number, quantity, pluralization, and culture formatting. It is useful for product code that needs readable output, but it is not an AI-writing editor and has no cover-letter workflow. ([README](https://github.com/Humanizr/Humanizer))
 - **[harshaneel/humanize](https://github.com/harshaneel/humanize)** bundles two static skills, `humanize` and `ai-check`. Its useful additions are a six-part writer-profile pass before rewriting, countable sentence-rhythm checks, an explicit RLHF or “helpful assistant” voice audit, a self-rewrite distance check, and a separate forensic report that quotes every fired signal. ([humanize skill](https://raw.githubusercontent.com/harshaneel/humanize/main/humanize/SKILL.md); [ai-check skill](https://raw.githubusercontent.com/harshaneel/humanize/main/ai-check/SKILL.md))
 

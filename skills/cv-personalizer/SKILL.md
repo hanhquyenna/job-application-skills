@@ -83,6 +83,7 @@ Normalize punctuation, case, plurals, hyphenation, and common inflections for ma
 - Preserve the original metric, scope, employer, dates, and level of responsibility. Do not inflate ownership or seniority.
 - A JD keyword may be added only when the experience bank supports the underlying capability. Never keyword-stuff or fabricate a tool, credential, language, or outcome.
 - If a requirement is missing, label it as a gap and suggest a truthful alternative such as a project, coursework, or transferable skill.
+- Do not import `anecdote` records or cover-letter-only context into a CV bullet. Narrative evidence may guide application writing, but it must remain outside the CV unless the user separately approves a sourced experience record.
 - Keep a change record listing selected bullets, omitted evidence, and any wording adapted to the JD.
  - Keep each personalization run isolated by job ID and employer. Never reuse another employer’s wording, requirements, score, or application answers.
 

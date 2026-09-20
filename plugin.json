@@ -1,0 +1,40 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "job-application-skills",
+  "version": "1.0.0",
+  "description": "Evidence-first workflows for sourcing jobs, maintaining candidate evidence, tailoring and validating CVs, building application documents, and writing truthful cover letters.",
+  "author": {
+    "name": "hanhquyenna"
+  },
+  "repository": "https://github.com/hanhquyenna/job-application-skills",
+  "keywords": [
+    "jobs",
+    "job-applications",
+    "cv",
+    "resume",
+    "cover-letter",
+    "career"
+  ],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Job Application Skills",
+        "shortDescription": "Evidence-first job application workflows",
+        "longDescription": "Source and verify roles, maintain an experience bank, tailor and validate CVs, build application documents, and prepare truthful job-specific cover letters.",
+        "developerName": "hanhquyenna",
+        "category": "Productivity",
+        "capabilities": [
+          "Read",
+          "Write"
+        ],
+        "websiteURL": "https://github.com/hanhquyenna/job-application-skills",
+        "defaultPrompt": [
+          "Set up my job-application workspace and tell me what you need from me.",
+          "Tailor and validate my CV for this job description using only supported evidence.",
+          "Build a truthful cover letter for this role from my approved evidence.",
+          "Run the full job-application pipeline for this job."
+        ]
+      }
+    }
+  }
+}
